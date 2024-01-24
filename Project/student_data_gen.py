@@ -14,4 +14,4 @@ def student_gen():
     }
 
     student_df = pd.DataFrame(student_data)
-    return student_df
+    print(student_df)
