@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 def add_gpa_column(df):
+    print(df['Grade'])
     df['GPA'] = df['Grade'] / 20.0
     return df
 
