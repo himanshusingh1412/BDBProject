@@ -17,10 +17,9 @@ def filter_students_by_department(df, department):
     return filtered_df
 
 def transform(student_df):
-    df=student_df
-    student_df = add_gpa_column(df)
-    student_df = categorize_students_by_age(df)
-    filtered_students = filter_students_by_department(df, 'Computer Science')
+    student_df = add_gpa_column(student_df)
+    student_df = categorize_students_by_age(student_df)
+    filtered_students = filter_students_by_department(student_df, 'Computer Science')
 
     print("Original DataFrame:")
     print(student_df)
